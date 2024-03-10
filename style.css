@@ -1,0 +1,73 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    perspective: 1500px;
+    margin: 0;
+}
+
+.right-button,
+.left-button {
+    position: absolute;
+    z-index: 2000;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+.right-button img,
+.left-button img {
+    width: 50px;
+    height: 50px;
+}
+.right-button {
+    transform: translateX(1100%);
+}
+.left-button {
+    transform: translateX(-1100%);
+}
+
+.book {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+
+.front-cover,
+.back-cover {
+    position: absolute;
+    height: 800px;
+    width: 600px;
+    background-color: saddlebrown;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    border-radius: 0 10px 10px 0;
+    transform-origin: center left;
+    transform: rotateX(10deg);
+}
+
+.front-cover {
+    z-index: 5;
+    transition: all 0.5s;
+}
+
+.back-cover{
+    z-index: -5;
+}
+
+.page {
+    height: 780px;
+    width: 590px;
+    background: white;
+    border-radius: 0 10px 10px 0;
+    z-index: 0;
+    transform: translateX(-0.75%);
+    justify-content: center;
+    position: absolute;
+    transition: transform 0.5s;
+}

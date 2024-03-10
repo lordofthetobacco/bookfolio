@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": 2,
+      "imageUrl": "/assets/photos/balcony.jpg",
+      "descriptionUrl": "/assets/descriptions/balcony.txt"
+    },
+    {
+      "id": 3,
+      "imageUrl": "/assets/photos/dog.jpg",
+      "descriptionUrl": "/assets/descriptions/dog.txt"
+    },
+    {
+      "id": 4,
+      "imageUrl": "/assets/photos/car.jpg",
+      "descriptionUrl": "/assets/descriptions/car.txt"
+    },
+    {
+      "id": 5,
+      "imageUrl": "/assets/photos/cctv.jpg",
+      "descriptionUrl": "/assets/descriptions/cctv.txt"
+    }
+  ]
+}
